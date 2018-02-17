@@ -13,12 +13,6 @@ require('electron-debug')();
 // This is the main URL which will be loaded into our app.
 const mainURL = 'file://' + path.join(__dirname, '../renderer', 'index.html');
 
-const APP_ICON = path.join(__dirname, '../resources', 'icon');
-
-const iconPath = () => {
-	return APP_ICON + '.png';
-};
-
 // Function to handle 'closed' event
 function onClosed() {
 	// Dereference the mainWindow.
@@ -36,7 +30,6 @@ function createMainWindow() {
 	const win = new BrowserWindow({
 		// Creating a new window
 		title: '{{ name }}',
-		icon: iconPath(),
 		x: mainWindowState.x,
 		y: mainWindowState.y,
 		width: mainWindowState.width,

@@ -6,10 +6,7 @@
     "test": "xo",
     "start": "electron app"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/{{ owner }}/{{ repo }}.git"
-  },
+  "repository": "https://github.com/{{ owner }}/{{ repo }}.git",
   "author": "{{{ author }}}",
   "license": "MIT",
   "bugs": {

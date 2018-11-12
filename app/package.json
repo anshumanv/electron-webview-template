@@ -1,7 +1,7 @@
 {
   "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "{{{ description }}}",
+  "description": "{{ description }}",
   "main": "./main/index.js",
   "repository": "https://github.com/{{ owner }}/{{ repo }}.git",
   "author": "{{{ author }}}",
